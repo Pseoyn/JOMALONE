@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+body {background-color: rgb(28, 28, 28);}
+#wrap {width: 1500px; height: 2400px; margin: 0 auto; background-color: rgb(28, 28, 28);}
+
+header {width: 1020px; height: 117px; background-color: rgb(28, 28, 28); margin: 0 auto; box-shadow: 0px 0px 30px 2px #a7a7a7;}
+    #logo {width: 200px; height:83px;  float: left; }
+    #logo img {width: 100%; height: 118px; opacity: 0.6;}
+    #menu {width: 750px; height: 50px;  margin: 30px 0 0 25px; float: right; font-size: 13px;}
+        ul {display: flex;  }
+            li a {display: block; text-decoration: none; transition: all 0.2s; padding: 10px 25px; color:#a7a7a7;}
+            li a:hover { background-color: #404040;}
+            
+   
+
+
+#product1 {width:1020px; height: 700px;  margin: 0 auto; display: flex;
+    align-items: center; justify-content: center; }
+    #product2 { width: 1020px; height: 500px; margin: 20px 0 0 0; border: 1px solid #a7a7a7; padding: 20px; box-shadow: -10px -10px 20px 1px #6b6b6b;}
+        #product2 > img {width: 500px; height: 500px; background-color: tomato; float: left; margin: 0 50px 0 0; 
+         border: 1px solid #a7a7a7;}
+        #text > h2 { margin: 40px 0 0 0; font-size: 30px; font-family:"Merriweather"; color:#a7a7a7;}
+        #text > h4 {font-size: 25px; margin: 30px 0 0 0; color:#a7a7a7;}
+        #text > p { margin:  40px 70px 0 0; text-align: justify; font-size: 19px; color:#a7a7a7;}
+
+
+        .basket {position: relative; width: 130px; height: 60px;  float: right; overflow: hidden;
+            margin: 50px 20px 0 0;  border: 1px solid #a7a7a7; background:transparent;}
+        .basket:hover {cursor: pointer;}
+        .basket i { left: -100%; top: 0; position: absolute;
+            height: 100%; width: 100%; line-height: 1.7; transition: all 0.3s;}  
+        .basket span {left: 0; top: 0; position: absolute; font-size: 22px;
+            height: 100%; width: 100%; line-height: 2.5; transition: all 0.3s; color:#a7a7a7;}
+        .basket i {font-size: 35px; color:#a7a7a7}
+        .basket:hover i{left: 0;} 
+        .basket:hover span {left: 100%;}  
+
+
+        .hart {width: 140px; height: 60px; position: relative; overflow: hidden; float: right; 
+        margin: 50px 40px 0 0;  border: 1px solid #a7a7a7; background:transparent;}
+        .hart:hover {cursor: pointer;}
+        .hart i {height: 100%; width: 100%; line-height: 3.5; transition: all 0.3s;
+            left: -100%; top:0; position: absolute; line-height: 1.6;}
+        .hart span {left: 0; top: 0; position: absolute; height: 100%; width: 100%; line-height: 2.5;
+            transition: all 0.3s; font-size: 22px; color:#a7a7a7}
+        .hart i {color: tomato; font-size: 35px;}
+        .hart:hover i {left:0;}
+        .hart:hover span {left: 100%;}
+
+       
+        
+
+       
+
+#allbox {width: 1020px; height: 300px;  margin: 0 auto; padding: 70px 0 0 0}
+
+    #box1 { margin: 0 11%; } 
+    #box1 > p {text-align: center;color:#a7a7a7}
+
+    #box2 {  margin: 0 11%; display:none; color:#a7a7a7;} 
+    #box2 > p {text-align: center;}
+
+    #box3 {  margin: 0 11%; display:none; color:#a7a7a7;} 
+    #box3 > p {text-align: center;}
+
+    #box4 {width:800px; height: 500px;  margin: 0 11%; display:none;}
+        #review {width:800px; height: 500px; overflow: auto;  color: #a7a7a7; margin-bottom: 30px;}
+        #review::-webkit-scrollbar {
+            width: 10px;
+        }
+        #review::-webkit-scrollbar-track {
+            background-color:rgb(28, 28, 28)}
+            
+            #review::-webkit-scrollbar-thumb {
+                border:1px solid rgba(228, 228, 228, 0.3) ; border-radius: 30px;
+            }
+
+        #box4 > textarea {width: 800px; height: 200px; border-radius: 0.8rem; border: none; resize: none;
+        font-size: 20px; padding: 15px; border: 1px solid #a7a7a7; background-color:rgb(28, 28, 28);
+        color: #a7a7a7; box-shadow: 0px 0px 30px 0 #a7a7a7;} 
+        #box4 > button {width: 75px; height:35px; border:1px solid #a7a7a7; border-radius: 20px; 
+            float: right; margin: 20px 10px 0 0; background-color: rgb(28, 28, 28); color: #a7a7a7; cursor: pointer; transition: 0.2s ease-in-out;}
+        #box4 > button:hover { margin: 25px 10px 0px 0; background-color: #404040; }
+
+#buttonbox {width: 634px; height: 43px; 
+    display: flex; justify-content: center; align-content: center; flex-wrap: wrap;  margin: 0 0 20px 19%;}
+    #buttonbox > button {border:none; transition: all 0.5s ease-in-out;}
+    #buttonbox > button { width: 150px; height: 50px; color:#a7a7a7}
+    /* 버튼 효과 */
+
+    #buttonbox > button {
+        background:transparent;
+        position: relative;
+        border: 1px solid transparent;
+        transition: all 0.4s cubic-bezier(.5, .24, 0, 1);}
+
+        #buttonbox > button.active {border-bottom: 1px solid #a7a7a7;}
+    
+    #buttonbox > button::before {
+        content: '';
+        position: absolute;
+        left:0px; bottom:0px; width: 0%; height: 1px; background-color: #a7a7a7;
+        display: block;
+        transition: all 0.4s cubic-bezier(.5, .24, 0, 1)}
+    
+    #buttonbox > button:hover::before {width:100%;}
+
+    #buttonbox > button::after {
+        content: '';
+        position: absolute;
+        right: 0px; top: 0px;  width: 0%; height: 1px; background-color: #a7a7a7;
+        transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+    }
+
+    #buttonbox > button:hover::after {width:100%;}
+
+    #buttonbox > button:hover { 
+        cursor:pointer;
+        background-color: transparent;
+        border-left: 1px solid #a7a7a7;
+        border-right: 1px solid #a7a7a7;}
+
+    /* ---- */
+
+
+    
+#product_video {width: 1020px; height: 700px; background: rgb(28, 28, 28); margin: 0 auto; padding: 100px 0 0 0;
+    display: flex; justify-content: center;}
+    #product_video video {width:635px; height: 360px; margin: 40px 0 0 0; box-shadow: 20px 20px 0px 0px #3f3f3f;
+        border: 10px solid rgb(28, 28, 28);}
+
+
+#title {width: 1020px; height: 100px; display: flex; justify-content: center; align-items:center; background-color: rgb(28, 28, 28);
+        margin: 0 auto; box-shadow: -0px -5px 0px 0px  #a7a7a7;}
+    #title > h2 {font-family:"Merriweather"; color:#a7a7a7; }
+    
+section {width: 1020px; height: 600px;  margin: 0 auto;  display: flex; flex-wrap: wrap; justify-content: center; padding: 60px 0 0 0}
+    article {width: 150px; height: 250px; color:#a7a7a7; box-shadow: 0px 0px 5px 1px #a7a7a7;
+         margin: 20px;  border-radius: 45% 45% 0 0; transition: all 0.2s ease-in-out; }
+    article:hover {transform: scale(1.1); cursor: pointer; box-shadow: 0px 0px 30px 0px  #a7a7a7;}
+    article img {width: 150px; height: 150px;  border-radius: 45% 45% 0 0;}
+        
+    article h4 {font-size: 16px; text-align: center; margin: 10px 0 0 0; font-family:"Merriweather"}
+    article p {font-size: 14px; text-align: center; margin: 15px;}
+
+    
+       
+
+footer {width: 1920; height: 280px; background-color:rgb(28, 28, 28); float: left;}
+footer > p { color: #888; text-align: center; margin: 50px 0 0 0; font-size: 18px; }
+

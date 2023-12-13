@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+
+<script>
+
+    $(function(){
+        $('#buttonbox > button:nth-of-type(1)').click(function(){
+            $('#buttonbox > button').removeClass('active');
+            $(this).addClass('active');
+            $('#box1').fadeIn();
+            $('#box2').hide();
+            $('#box3').hide();
+            $('#box4').hide();
+
+            $('#product_video > video').show();
+        });
+
+        $('#buttonbox > button:nth-of-type(2)').click(function(){
+            $('#buttonbox > button').removeClass('active');
+            $(this).addClass('active');
+            $('#box2').fadeIn();
+            $('#box1').hide();
+            $('#box3').hide();
+            $('#box4').hide();
+
+            $('#product_video > video').show();
+        });
+
+        $('#buttonbox > button:nth-of-type(3)').click(function(){
+            $('#buttonbox > button').removeClass('active');
+            $(this).addClass('active');
+            $('#box3').fadeIn();
+            $('#box1').hide();
+            $('#box2').hide();
+            $('#box4').hide();
+
+            $('#product_video > video').show();
+        });
+
+        $('#buttonbox > button:nth-of-type(4)').click(function(){
+            $('#buttonbox > button').removeClass('active');
+            $(this).addClass('active');
+            $('#box4').fadeIn();
+            $('#box1').hide();
+            $('#box2').hide();
+            $('#box3').hide();
+            
+            $('#product_video > video').hide();
+
+        });
+    });
+
+
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall</title>
+
+    <!-- 아이콘 링크 -->
+    <!-- 여기서 회원가입하면 받을 수 있음 > https://fontawesome.com/start -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/common.css">
+
+</head>
+
+<body>    
+    <div id="wrap">
+
+        <header>
+            <div id="logo">
+                <img src="sub_img/logo.jpg" alt="logo">
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">전체상품</a></li>
+                    <li><a href="index.html">이벤트</a></li>
+                    <li><a href="index.html">위시리스트</a></li>
+                    <li><a href="index.html">장바구니</a></li>
+                    <li><a href="index.html">조 말론 런던 하우</a></li>
+                    <li><a href="index.html">문의</a></li>
+                    <li><a href="index.html">로그인</a></li>
+                </ul>
+            </div>
+            
+           
+            
+           
+
+        </header>
+    
+        <div id="product1">
+            <div id="product2">
+                <img src="sub_img/5.jpg" alt="5">
+        
+                <div id="text">
+                    <h2>Oud & Bergamot</h2>
+                    <h4>$ 102,000</h4>
+                    <p>매혹적인 오드(oud) 향은
+                        유서 깊은 중동의
+                        전통을 중심으로 완성됩니다.
+                        이 신비롭고 귀한 나무가
+                        깨끗한 베르가못,
+                        블랙 머스크의 풍부함과
+                        조화를 이루어 더욱 빛나는
+                        향을 완성합니다.
+                        최면에 빠지는 듯한 고혹적인 향.</p>
+                </div>
+                
+
+                <button class="hart">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>위시리스트</span>
+                </button>
+
+                 
+                <button class="basket">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>장바구니</span>
+                </button>
+
+            </div>
+        </div>
+
+
+        <div id="allbox">
+
+            <div id="buttonbox">
+                <button type="button" class="active">성 분</button>
+                <button type="button">사용 방법</button>
+                <button type="button">테이스팅 노트</button>
+                <button type="button">상품 후기</button>
+            </div>
+
+            <div id="box1">
+                
+                    
+                    <p> <br>[ 전성분 ] <br><br>
+                    리날룰, 리모넨, 변성알코올, 시트랄, 정제수, 향료 [ILN36640] <br><br>
+                    *제공된 성분은 동일 제품이라도 경우에 따라 변경될 수 있습니다. *<br>
+                    *최신정보는 제품 포장의 성분을 참고하시거나 본사 고객관리지원팀으로 연락 부탁 드립니다.*</p>
+                   
+            </div>
+            
+            <div id="box2">
+                
+                    <p><br>[ 사용방법 ] <br><br>
+                    손목, 목 부위 등 맥박이 뛰는 곳에 충분히 뿌려주세요. <br>
+                    시간이 지날 수록 체온으로 인해 향이 더욱 은은하게 퍼져나갑니다. <br>
+                    단독으로 사용 또는 다른 코롱이나 배스 앤 바디 제품과 함께 레이어링 해보세요.</p>
+                
+            </div>
+        
+            <div id="box3">
+                
+                    <p> 
+                        <br> [ 탑 노트 ] <br>
+                        베르가못<br>
+                        베르가못이 얼 그레이 티에 생기를 더해주며, 시트러스의 신선함으로 향을 밝고 환하게 만들어 줍니다.<br><br>
+                        
+                        [ 하트 노트 ] <br>
+                        시더우드<br>
+                        드라이하고  강렬하게 우디한 향이 베이스에 가시덤불 느낌을 더해줍니다. <br><br>
+                        
+                        [ 베이스 노트 ] <br>
+                        오드 <br>
+                        풍부한 송진 향에 동물성 향이 더해져 향기에 강렬함과 깊이를 선사합니다. <br></p>
+                
+            </div>
+            
+            <div id="box4">
+                
+                <div id="review">
+                    <h4>이ㅇㅇ <span>[신고하기]</span></h4>
+                    <p>향이 좋아요 <br><span>[2023.07.01]</span></p><br>
+                
+                
+                    <h4>할ㅇㅇ <span>[신고하기]</span></h4>
+                    <p>예상대로 원하던 향이에요!
+                        <br><span>[2023.07.01]</span>
+                    </p><br>
+                
+                
+                    <h4>이ㅇㅇ <span>[신고하기]</span></h4>
+                    <p>가격대비 그 이상이에요
+                        <br><span>[2023.07.01]</span>
+                    </p><br>
+            
+                
+                
+                    <h4>콩ㅇㅇ <span>[신고하기]</span></h4>
+                    <p>생각보다 괜찮아요
+                        <br><span>[2023.07.01]</span>
+                    </p><br>
+               
+               
+                    <h4>이ㅇㅇ <span>[신고하기]</span></h4>
+                    <p>향 좋아요!
+                        <br><span>[2023.07.01]</span></p><br>
+           
+      
+                    <h4>외ㅇㅇ님 <span>[신고하기]</span></h4>
+                    <p>향 너무 좋아요
+                       <br> <span>[2023.07.01]</span></p><br>
+           
+
+                    <h4>쾅ㅇㅇ <span>[신고하기]</span></h4>
+                    <p>괜찮아요
+                       <br> <span>[2023.07.01]</span>
+                    </p><br>
+  
+                    <h4>잉ㅇㅇ님 <span>[신고하기]</span></h4>
+                    <p>나쁘지 않아요
+                        <br> <span>[2023.07.02]</span>
+                    </p><br>
+
+                    <h4>코ㅇㅇ님 <span>[신고하기]</span></h4>
+                    <p>좋아요
+                        <br> <span>[2023.07.02]</span>
+                    </p><br>
+                </div>
+                <textarea placeholder="후기를 작성하세요."></textarea>
+                <button type="button"> 올리기 </button>
+            </div>
+
+        </div>
+
+
+        <div id="product_video">
+            <video src="img/mountains_-_70548 (1080p).mp4" loop muted autoplay></video>
+            
+        </div>
+        
+
+
+        <div id="title">
+            <h2>Best oud perfume</h2>
+        </div>
+
+        
+        <section>
+
+            <article>
+                <img src="sub_img/1.jpg">
+                
+                <h4>Oud perfume1</h4>
+                <p>$ 102,000</p>
+               
+            </article>
+
+            <article>
+                <img src="sub_img/2.jpg">
+                <h4>Oud perfume2</h4>
+                <p>$ 102,000 </p>
+            </article>
+
+            <article>
+                <img src="sub_img/3.jpg">
+                <h4>Oud perfume3</h4>
+                <p>$ 102,000</p>
+            </article>
+
+            <article>
+                <img src="sub_img/4.jpg">
+                <h4>Oud perfume4</h4>
+                <p>$ 102,000</p>
+            </article>
+        </section>
+        
+
+
+    </div>
+        
+        <footer>
+            <p>[ Jo Malone London 2021 ] <br><br>
+                이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232 <br><br>
+                통신판매업신고번호: 강남-15737호 <br><br>
+                호스팅서비스 사업자: (주)엘지유플러
+                고객관리지원팀: (02) 6971-3228</p>
+        </footer>
+
+    </body>
+</html>

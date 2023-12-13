@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+footer {width: 100%; height: 320px; background-color:black; float: left;}
+footer > p { color: #888; text-align: center; margin: 50px 0 0 0; font-size: 18px; }
+
